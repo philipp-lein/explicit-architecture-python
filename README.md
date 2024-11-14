@@ -1,4 +1,5 @@
 # Django Explicit Architecture Example
+### 🚀 A Django-based project following an explicit architecture.
 This project is a simple demonstration of Explicit Architecture in Django. It showcases how to structure a Django application to separate concerns clearly and make the architecture explicit.
 
 ## Features
