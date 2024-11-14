@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-sz57o%ko)*_$jftxkr#ntkd0nz!9jv1d*=4j^o)cn-!(c++s02'
+SECRET_KEY = 'django-insecure-n#p4oauh=znxr&wt18_c5*5o+3!cn4!vu1gnz$rya9jq=c#j^y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'src.Infrastructure.Persistence.Django.entity',
+    'src.Infrastructure.Persistence.Django.entity'
 ]
 
 MIDDLEWARE = [
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'src.Infrastructure.Django.urls'
 
 TEMPLATES = [
     {
@@ -68,8 +68,10 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
+
+ROOT_DIR = BASE_DIR.parent.parent  # Adjust based on your structure
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
@@ -77,7 +79,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': ROOT_DIR / 'db.sqlite3',
     }
 }
 
