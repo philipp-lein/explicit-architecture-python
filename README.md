@@ -9,7 +9,7 @@ This project is a simple demonstration of Explicit Architecture in Django. It sh
 
 ## Quick Start ⚡
 > 💡 **Hint:** This is the fastest way to get started with the project. 
-> It installs uv to setup python and python environment.
+> It installs [uv](https://github.com/astral-sh/uv) to setup python and python environment.
 ```bash
 ./make.sh init
 ./makse.sh add_user --username=PythonDjangoLover
