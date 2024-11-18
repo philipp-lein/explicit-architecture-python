@@ -40,7 +40,7 @@ case $COMMAND in
     # Install uv if not already installed
     if ! command -v uv &> /dev/null; then
       echo "uv is not installed. Installing uv..."
-      curl -LsSf https://astral.sh/uv/0.5.1/install.sh | sh
+      curl -LsSf https://astral.sh/uv/0.5.2/install.sh | sh
       if [ $? -ne 0 ]; then
         echo "Failed to install uv. Please check your environment and try again."
         exit 1
